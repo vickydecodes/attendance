@@ -1,14 +1,35 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-   
+    <style>
+        .form {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+    </style>
 </head>
-<body>
-    <h1>attendance Register
-    </h1>
+
+<body style="height: 100vh; display: flex; justify-content: center; align-items: center; margin: 0px">
+    <div class="form">
+        <center>
+            <h1>Attendance Register</h1>
+        </center>
+        <div>
+            <center id="interface">
+                <label for="name" style="padding: 20px; margin: 20px;">Enter your Name:</label>
+                <input type="text" id="name" style="padding: 10px; margin: 20px;" required> <br>
+                <button class="submit" onclick="checkAttendance()" style="padding: 20px; margin: 20px;">Start
+                    calculating!</button>
+            </center>
+        </div>
+    </div>
     <script src="main.js"></script>
 </body>
+
 </html>
