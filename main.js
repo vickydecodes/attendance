@@ -52,7 +52,7 @@ function checkAttendance() {
   console.log(`Total hours conducted: ${totalHoursSum}`);
   console.log(`Total attended hours: ${attendedHoursSum}`);
 
-  const percentage = Math.round((attendedHoursSum / totalHoursSum) * 100);
+  const percentage = Number.parseFloat((attendedHoursSum / totalHoursSum) * 100).toFixed(2);
   console.log('Your attendance percentage is: ' + percentage + '%');
   interface.innerHTML += `Total hours conducted: ${totalHoursSum}` + '<br><br>'
   interface.innerHTML += `Total attended hours: ${attendedHoursSum}` + '<br><br>'
